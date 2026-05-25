@@ -1,227 +1,471 @@
-# Netflix-Analytics-Popularity-Prediction-and-Recommendation-System
-Netflix Analytics, Popularity Prediction & Recommendation System
+# 🎬 Netflix Analytics, Popularity Prediction & Recommendation System
 
-An AI-powered Netflix analytics platform that combines data analytics, machine learning, NLP, recommendation systems, and interactive visualization to create a personalized streaming experience. The platform analyzes Netflix datasets, predicts content popularity, recommends similar titles, and provides real-time content insights through an interactive Netflix-inspired interface.
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-MultiPage-red)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
+![NLP](https://img.shields.io/badge/NLP-TF--IDF-green)
+![TMDB API](https://img.shields.io/badge/API-TMDB-yellow)
+![Status](https://img.shields.io/badge/Status-Active-success)
 
-Built with a multi-page Streamlit architecture, the project delivers a modern UI with trending sections, content cards, analytics dashboards, and real-time movie poster integration.
+An **AI-powered Netflix analytics and recommendation platform** integrating **Machine Learning, NLP, Recommendation Systems, and Interactive Dashboards** to simulate a real-world streaming ecosystem.
 
-Installation & Setup
+The platform enables users to predict content popularity, discover personalized recommendations, visualize trends, and explore Netflix content through a modern **Netflix-inspired UI**.
 
-Clone repository:
+---
 
-git clone <repository-url>
+## ✨ Key Highlights
 
-Move to project directory:
+✅ AI-powered popularity prediction  
+✅ NLP-based recommendation engine  
+✅ Real-time TMDB API integration  
+✅ Interactive analytics dashboard  
+✅ Personalized content discovery  
+✅ Multi-page Streamlit application  
+✅ Netflix-inspired UI/UX  
 
-cd Netflix-Analytics
+---
 
-Install dependencies:
+# 🚀 Features
 
-pip install -r requirements.txt
+## 📈 AI-Powered Popularity Prediction
 
-Run application:
+Predict content popularity on a **0–10 scale** using Machine Learning and engineered features.
 
-streamlit run app.py
+### Features Used:
 
-Features
-Interactive Netflix Analytics Dashboard
-Top 10 Trending Movies
-Top 10 Trending TV Shows
-Content growth analysis over years
-Rating distribution visualizations
-Genre-wise insights
-Movie vs TV Show comparisons
-Catalog statistics
-Interactive charts and dashboards
-Popularity Prediction System
+📅 Release Year  
+🎭 Genre Popularity  
+🎬 Content Type  
+⏱ Duration  
+⭐ Rating  
+🌍 Country  
 
-Predicts content popularity on a 0–10 scale using machine learning.
+### Model Used:
 
-**Features used:
-
-Content Type
-Release Year
-Rating
-Country
-Genre
-Duration
-
-Model:
-
+```text
 Random Forest Regressor
+```
 
-Output:
+Outputs:
 
-Predicted popularity score
-Movie details
-Poster visualization
-Content metadata
-Intelligent Recommendation Engine
+✔ Predicted popularity score  
+✔ Movie metadata  
+✔ Real-time posters  
+✔ Content insights  
 
-Provides personalized recommendations using Natural Language Processing techniques.
+---
 
-Recommendation logic considers:
+## 🎯 Intelligent Recommendation Engine
 
-Genre similarity
-Description similarity
-Cast similarity
-Director similarity
-Franchise detection
+Designed a content-based recommendation system using NLP techniques.
+
+Recommendation logic combines:
+
+🎭 Genre similarity  
+📝 Description similarity  
+🎬 Cast similarity  
+🎥 Director similarity  
+🔗 Franchise relationships  
 
 Example:
 
+```text
 Final Destination
 ↓
 Final Destination 2
 ↓
 Final Destination 3
 ↓
-Related Horror Titles
-Personalized Content Filtering
+Related Horror Movies
+```
 
-Users can discover content through filters:
+---
 
-Genre
-Rating
-Release Year
-Content Type
-Real-Time Poster Integration
+## 📊 Interactive Analytics Dashboard
 
-Integrated with TMDB API:
+Visual insights include:
 
-Automatic movie poster retrieval
-Retry handling
-Request caching
-Timeout handling
-Session reuse
-Fallback support
-Project Architecture
-Dataset
-   ↓
-Data Preprocessing
-   ↓
-Feature Engineering
-   ↓
-Popularity Prediction Model
-   ↓
-Recommendation Engine
-   ↓
-TMDB API Integration
-   ↓
-Streamlit Frontend
-Machine Learning Pipeline
-Data Preprocessing
+📌 Top 10 Trending Movies  
+📌 Top 10 Trending TV Shows  
+📌 Content growth analysis  
+📌 Genre distribution  
+📌 Rating insights  
+📌 Movie vs TV comparison  
+📌 Dataset statistics  
 
-Performed:
+---
 
-Missing value handling
-Data cleaning
-Date conversion
-Label encoding
-Numerical transformations
-Text preprocessing
-Feature Engineering
+## 🔍 Personalized Content Discovery
 
-Created additional features:
+Users can filter content based on:
 
-Recency Score
+🎭 Genre  
+⭐ Rating  
+📅 Release Year  
+🎬 Content Type  
 
-Measures content freshness
+Provides a personalized streaming exploration experience.
 
-Genre Score
+---
 
-Measures genre popularity trends
+## 🌐 Real-Time TMDB API Integration
 
-Duration Score
+Integrated TMDB APIs for:
 
-Extracts numerical duration values
-
-Content-Type Score
-
-Movie vs TV weighting
-
-Recommendation Pipeline
-
-Combined text fields:
-
-Genres
-Description
-Cast
-Director
-
-Applied:
-
-TF-IDF Vectorization
-
-Generated:
-
-Cosine Similarity Matrix
-
-Used for intelligent recommendations.
-
-Tech Stack
-Frontend
-Streamlit
-HTML
-CSS
-
-Purpose:
-
-Multi-page application
-Netflix-inspired UI
-Interactive dashboards
-Backend
-Python
-
-Purpose:
-
-Business logic
-ML pipeline
-Data processing
-API handling
-Data Processing
-Pandas
-NumPy
-
-Used for:
-
-Data cleaning
-Transformations
-Aggregation
-Feature engineering
-Data Visualization
-Matplotlib
-Seaborn
-
-Used for:
-
-Trend analysis
-Comparative charts
-Rating distribution
-Analytics dashboards
-Machine Learning
-Scikit-Learn
-Random Forest Regressor
-Label Encoder
-TF-IDF Vectorizer
-Cosine Similarity
-
-Used for:
-
-Popularity prediction
-Recommendation engine
-NLP pipeline
-API Integration
-TMDB API
-Requests
+🖼 Movie posters  
+📄 Content metadata  
+⚡ Real-time information retrieval  
 
 Optimizations:
 
-Session reuse
-Retry mechanisms
-Request caching
-Timeout handling
-Deployment
-Streamlit Cloud
-Docker
-GitHub
+✔ Request caching  
+✔ Retry mechanisms  
+✔ Timeout handling  
+✔ Session reuse  
+✔ Fallback support  
+
+---
+
+# ▶️ How to Run the Project
+
+Follow these steps to run the application locally:
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/yourusername/Netflix-Analytics.git
+```
+
+---
+
+### 2️⃣ Navigate to the project directory
+
+```bash
+cd Netflix-Analytics
+```
+
+---
+
+### 3️⃣ Create a virtual environment (Recommended)
+
+For Windows:
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+For Mac/Linux:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+---
+
+### 4️⃣ Install all dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 5️⃣ Configure TMDB API Key
+
+Create a `.streamlit/secrets.toml` file:
+
+```toml
+TMDB_API_KEY="your_api_key_here"
+```
+
+Or create a `.env` file:
+
+```env
+TMDB_API_KEY=your_api_key_here
+```
+
+Get your API key from:
+
+https://www.themoviedb.org/settings/api
+
+---
+
+### 6️⃣ Run the Streamlit application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+### 7️⃣ Open the application
+
+Streamlit automatically launches:
+
+```text
+http://localhost:8501
+```
+
+Open it in your browser if it does not launch automatically.
+
+---
+
+## 📂 Application Pages
+
+The project follows a multi-page Streamlit structure:
+
+```bash
+pages/
+├── 📊 Dashboard.py
+├── 🎯 Recommendation.py
+├── 🔥 Popularity_Prediction.py
+└── 🔍 Content_Filter.py
+```
+
+Streamlit automatically detects files inside the `pages/` folder and creates navigation tabs.
+
+---
+
+## ⚠ Common Errors & Fixes
+
+### ModuleNotFoundError
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### TMDB posters not loading
+
+✔ Verify API key  
+✔ Check internet connection  
+✔ Ensure API request limits are not exceeded
+
+---
+
+### Streamlit command not found
+
+```bash
+pip install streamlit
+```
+
+or
+
+```bash
+python -m streamlit run app.py
+```
+
+---
+
+### Port already in use
+
+```bash
+streamlit run app.py --server.port 8502
+```
+
+# 🧠 Machine Learning Pipeline
+
+```mermaid
+graph TD
+
+A[📁 Netflix Dataset]
+-->B[🧹 Data Preprocessing]
+
+B-->C[⚙ Feature Engineering]
+
+C-->D[🤖 Popularity Prediction Model]
+
+C-->E[🎯 Recommendation Engine]
+
+D-->F[🌐 TMDB API Integration]
+
+E-->F
+
+F-->G[📊 Streamlit Frontend]
+```
+
+---
+
+# ⚙ Data Processing Workflow
+
+## 🧹 Data Preprocessing
+
+Performed:
+
+✔ Missing value handling  
+✔ Data cleaning  
+✔ Date conversion  
+✔ Text preprocessing  
+✔ Label encoding  
+✔ Numerical transformations  
+
+---
+
+## 🔬 Feature Engineering
+
+Created additional features:
+
+### 📅 Recency Score
+Measures content freshness
+
+### 🎭 Genre Score
+Measures genre popularity trends
+
+### ⏱ Duration Score
+Extracts numerical watch duration
+
+### 🎬 Content-Type Score
+Movie vs TV weighting
+
+---
+
+# 🧠 Recommendation Pipeline
+
+Combined textual attributes:
+
+🎭 Genre  
+📝 Description  
+🎥 Director  
+🎬 Cast  
+
+Applied:
+
+✔ TF-IDF Vectorization  
+✔ Cosine Similarity Matrix  
+
+Used for generating intelligent recommendations.
+
+---
+
+# 🛠 Tech Stack
+
+### 🎨 Frontend
+
+- Streamlit
+- HTML
+- CSS
+
+### ⚙ Backend
+
+- Python
+
+### 📊 Data Processing
+
+- Pandas
+- NumPy
+
+### 📉 Visualization
+
+- Matplotlib
+- Seaborn
+
+### 🤖 Machine Learning
+
+- Scikit-Learn
+- Random Forest Regressor
+- TF-IDF Vectorizer
+- Cosine Similarity
+- Label Encoder
+
+### 🌐 APIs
+
+- TMDB API
+- Requests
+
+### ☁ Deployment
+
+- Docker
+- GitHub
+- Streamlit Cloud
+
+---
+
+# 📂 Project Structure
+
+```bash
+Netflix-Analytics/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+│
+├── pages/
+│   ├── Dashboard.py
+│   ├── Recommendation.py
+│   ├── Popularity_Prediction.py
+│   └── Content_Filter.py
+│
+├── data/
+├── models/
+├── assets/
+└── notebooks/
+```
+
+---
+
+# ⚡ Installation
+
+Clone repository:
+
+```bash
+git clone https://github.com/yourusername/Netflix-Analytics.git
+```
+
+Move into project:
+
+```bash
+cd Netflix-Analytics
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run app:
+
+```bash
+streamlit run app.py
+```
+
+---
+
+# 🔮 Future Enhancements
+
+🚀 Hybrid recommendation system  
+🚀 Collaborative filtering  
+🚀 Watchlists  
+🚀 User authentication  
+🚀 Deep learning recommendations  
+🚀 Cloud deployment pipeline  
+
+---
+
+# 💡 Skills Demonstrated
+
+🧠 Machine Learning  
+🎯 Recommendation Systems  
+📊 Data Analytics  
+🔍 NLP  
+⚙ Feature Engineering  
+🌐 API Integration  
+📈 Dashboard Development  
+💻 Full Stack Development  
+
+---
+
+# 👨‍💻 Author
+
+### Viraj Raut
+
+AI/ML Student | Full Stack Developer | Machine Learning Enthusiast
+
+🔗 GitHub: https://github.com/yourusername
+
+💼 LinkedIn: https://linkedin.com/in/yourprofile
