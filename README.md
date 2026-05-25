@@ -5,7 +5,7 @@ An AI-powered Netflix analytics platform that combines data analytics, machine l
 
 Built with a multi-page Streamlit architecture, the project delivers a modern UI with trending sections, content cards, analytics dashboards, and real-time movie poster integration.
 
-**Installation & Setup
+Installation & Setup
 
 Clone repository:
 
@@ -23,7 +23,7 @@ Run application:
 
 streamlit run app.py
 
-**Features
+Features
 Interactive Netflix Analytics Dashboard
 Top 10 Trending Movies
 Top 10 Trending TV Shows
